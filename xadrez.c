@@ -16,7 +16,7 @@ int main () {
     int casaBispo = 5, contadorBispo = 0;
     printf("\nMovimento do Bispo:\n");
     while(contadorBispo < casaBispo) {
-        printf("Cima, esquerda\n");
+        printf("Cima, direita\n");
         contadorBispo++;
     }
     printf("Bispo se moveu %d casas para a diagonal (cima e direita).\n", casaBispo);
@@ -29,7 +29,23 @@ int main () {
         printf("Esquerda\n");
         contadorRainha++;
     }while(contadorRainha < casaRainha);
-    printf("Rainha se moveu %d casas para a esquerda.", casaRainha);
+    printf("Rainha se moveu %d casas para a esquerda.\n", casaRainha);
+    
+    
+    //Movimento do cavalo
+    int movimentosBaixo = 2, movimentoEsquerda = 1;
+    printf("\nMovimento do cavalo:\n");
+    for (int i = 0; i < movimentosBaixo; i++) {
+        printf("Baixo\n");
+    }
+    
+    int contadorEsquerda = 0;
+    while(contadorEsquerda < movimentoEsquerda) {
+        printf("Esquerda\n");
+        contadorEsquerda++;
+    }
+    
+    printf("O cavalo se moveu no formato 'L': %d casas para a baixo e %d casa para a esquerda.", movimentosBaixo, movimentoEsquerda);
     
     
     return 0;
